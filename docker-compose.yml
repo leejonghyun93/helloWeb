@@ -8,12 +8,12 @@ networks:
 #서비스 선언
 services:
   was1:
-    image: fhohffodf/hello_web:latest
+    image: fhohffodf/hello-web:latest
     networks:
       - kosa_network
   #was2 생성
   was2:
-    image: fhohffodf/hello_web:latest
+    image: fhohffodf/hello-web:latest
     networks:
       - kosa_network
   #nginx 생성
