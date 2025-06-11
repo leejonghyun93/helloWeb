@@ -9,16 +9,19 @@ networks:
 services:
   was1:
     image: fhohffodf/hello-web:latest
+    container_name: was1
     networks:
       - kosa_network
   #was2 생성
   was2:
     image: fhohffodf/hello-web:latest
+    container_name: was2
     networks:
       - kosa_network
   #nginx 생성
   nginx:
     image: nginx:latest
+    container_name: webserver1
     ports:
       - 80:80
     volumes:
