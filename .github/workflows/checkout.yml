@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
 
       - name: docker hub push
-        run: docker push ${{ secrets.USERNAME}}/${{env.REPOSITORY_NAME}}
+        run: docker push ${{ secrets.USERNAME }}/${{env.REPOSITORY_NAME}}
 
   deploy:
     needs: build
