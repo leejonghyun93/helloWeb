@@ -14,6 +14,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: gradlew
+        run: chmod +x gradlew
+
       - name: build
         run: ./gradlew bootJar
 
